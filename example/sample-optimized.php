@@ -49,7 +49,7 @@ $familyCache = new PreEmptiveCache(function($id) use ($conn){
         )
     )->fetch_assoc();
 }, array(
-    'maxRecordsCached' => 1000,
+    'maxRecordsCached' => 99999,
     'mode' => PreEmptiveCache::LESS_OLDEST_MODE,
     'debug' => $debug,
 ));

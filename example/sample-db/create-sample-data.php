@@ -13,7 +13,7 @@ $password = isset($options['p']) ? $options['p'] : '';
 $database = isset($options['d']) ? $options['d'] : 'test';
 $nFamilies = isset($options['n']) ? intval($options['n']) : 1000;
 $nRecords = isset($options['m']) ? intval($options['m']) : 100000;
-$nProducts = isset($options['0']) ? intval($options['0']) : 10000;
+$nProducts = isset($options['o']) ? intval($options['o']) : 10000;
 
 $conn = mysqli_connect($host, $user, $password, $database);
 
